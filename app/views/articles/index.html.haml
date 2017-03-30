@@ -1,0 +1,6 @@
+%h1 Articles Index
+%ul
+  - @articles.each do |article|
+    %li
+      %a{:href => "/articles/show/#{article.id}"}
+        = article.title
